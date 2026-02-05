@@ -42,19 +42,19 @@ export default function Hero() {
             <div className="row mt-5 pt-4">
               <div className="col-4">
                 <div className="stat-box">
-                  <span className="stat-number">50K</span>
+                  <span className="stat-number">50K<span style={{color:'#A5D760'}}>+</span></span>
                   <div className="stat-label">Happy Customers</div>
                 </div>
               </div>
               <div className="col-4">
                 <div className="stat-box">
-                  <span className="stat-number">98%</span>
+                  <span className="stat-number">98<span style={{color:'#A5D760'}}>%</span></span>
                   <div className="stat-label">Satisfaction</div>
                 </div>
               </div>
               <div className="col-4">
                 <div className="stat-box">
-                  <span className="stat-number">24x7</span>
+                  <span className="stat-number">24<span style={{color:'#A5D760'}}>x</span>7</span>
                   <div className="stat-label">Support</div>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function Hero() {
           <div className="col-lg-6 d-flex justify-content-end ">
             <div className="product-hero-card position-relative ">
               <span className="price-tag"> 30% Off</span>
-              <span className="position-absolute btn-bright-green d-flex align-items-center gap-1" style={{bottom:'25px', left:'25px', padding:'10px 15px'}}> <Image src={bolt} alt=""/>Fast Action</span>
+              <span className="position-absolute btn-bright-green d-flex align-items-center gap-1" style={{bottom:'25px', zIndex:'9', left:'25px', padding:'10px 15px'}}> <Image src={bolt} alt=""/>Fast Action</span>
               <div className="text-center py-5">
                 {/* Product Image Placeholder */}
                 <Image src={product1} alt="" />

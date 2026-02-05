@@ -1,4 +1,6 @@
 'use client';
+import Image from 'next/image';
+import verifyicon from './Assets/verifygreen.png';
 
 export default function Testimonials() {
   const testimonials = [
@@ -26,39 +28,45 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="reviews" className="py-5">
+    <section id="reviews" className="py-2 py-sm-5">
       <div className="container">
-        <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold mb-4">
-            Trusted by<br/>
-            <span className="text-bright-green">Thousands</span>
-          </h2>
-          
-          <div className="d-inline-flex align-items-center gap-3 bg-bright-green px-4 py-2 rounded-pill">
-            <div className="rating">
-              ★★★★★
+        <div className="row align-items-end mb-4">
+          <div className=" col-sm-6 col-12">
+            <h2 className="title">
+              Trusted by<br/>
+              Thousands
+            </h2>
+          </div>
+          <div className="col-lg-5 col-sm-6 col-12">
+            <div className="bg-bright-green px-4 py-3 rounded-pill mb-2" style={{width:'fit-content'}}>
+              <div className="rating">
+                ★★★★★
+              </div>
+              <div className="d-flex gap-2 align-items-end">
+                <strong className="d-block text-xs" style={{ color: '#000', lineHeight:'25px'}}>4.9/5</strong> from 2,500+ reviews
+              </div>
             </div>
-            <div>
-              <strong className="d-block" style={{ color: '#000' }}>4.9/5 - Out of 2500+</strong>
-              <small style={{ color: '#000' }}>What people have to say about us?</small>
-            </div>
+            <p className="text-xs">Real results from real athletes</p> 
           </div>
         </div>
         
         <div className="row g-4">
           {testimonials.map((testimonial, idx) => (
-            <div key={idx} className="col-md-4">
+            <div key={idx} className="col-lg-4 col-sm-6">
               <div className="testimonial-card">
-                <div className="rating mb-2">
-                  {'★'.repeat(testimonial.rating)}
+                <div className='d-flex align-items-center justify-content-between mb-4'>
+
+                  <div className="rating mb-2">
+                    {'★'.repeat(testimonial.rating)}
+                  </div>
+                  
+                  {testimonial.verified && (
+                    <span className="verified-badge d-flex gap-2 align-items-center">
+                      <Image src={verifyicon} alt=""/> Verified Review
+                    </span>
+                  )}
+                
                 </div>
-                
-                {testimonial.verified && (
-                  <span className="verified-badge">
-                    ✓ Verified Review
-                  </span>
-                )}
-                
                 <p className="testimonial-text">
                   "{testimonial.text}"
                 </p>

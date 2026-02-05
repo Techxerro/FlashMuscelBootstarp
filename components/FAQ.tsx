@@ -21,15 +21,19 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-5 bg-light-section">
+    <section id="faq" className="py-5">
       <div className="container">
-        <h2 className="display-5 fw-bold text-center mb-5">
-          Frequently Asked<br/>
-          Questions
-        </h2>
+        <div className="row">
+          <div className="col-12">
+            <h2 className="title mb-md-5 mb-3">
+              Frequently Asked<br/>
+              Questions
+            </h2>
+          </div>
+        </div>
         
         <div className="row justify-content-center">
-          <div className="col-lg-8">
+          <div className="col-lg-12">
             <div className="accordion" id="faqAccordion">
               {faqs.map((faq, idx) => (
                 <div key={idx} className="accordion-item">
@@ -58,7 +62,7 @@ export default function FAQ() {
             </div>
             
             <div className="text-center mt-5">
-              <p className="mb-3">Still have questions?</p>
+              <p className="mb-3 text-sm">Still have questions?</p>
               <button className="btn btn-bright-green">
                 Contact Support
               </button>

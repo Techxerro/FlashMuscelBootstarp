@@ -1,8 +1,16 @@
 'use client';
+import {useState, useEffect} from 'react'
 import Image from "next/image";
 import logo from './Assets/logo.png'
 
 export default function Footer() {
+
+  const [currentYear, setCurrentYear] = useState<number>(0);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="footer">
       <div className="container">
@@ -18,7 +26,7 @@ export default function Footer() {
           </div>
           
           {/* Products Column */}
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-4 mb-4">
             <h6 className="footer-title">Products</h6>
             <a href="#" className="footer-link">Vit2MAX</a>
             <a href="#" className="footer-link">Riboxin</a>
@@ -27,7 +35,7 @@ export default function Footer() {
           </div>
           
           {/* Company Column */}
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-4  mb-4">
             <h6 className="footer-title">Company</h6>
             <a href="#" className="footer-link">About Us</a>
             <a href="#" className="footer-link">Our Story</a>
@@ -36,7 +44,7 @@ export default function Footer() {
           </div>
           
           {/* Support Column */}
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2  col-4 mb-4">
             <h6 className="footer-title">Support</h6>
             <a href="#" className="footer-link">FAQ</a>
             <a href="#" className="footer-link">Shipping</a>
@@ -45,7 +53,7 @@ export default function Footer() {
           </div>
           
           {/* Legal Column */}
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3  col-4 mb-4">
             <h6 className="footer-title">Legal</h6>
             <a href="#" className="footer-link">Privacy Policy</a>
             <a href="#" className="footer-link">Terms of Service</a>
@@ -57,9 +65,9 @@ export default function Footer() {
         
         <div className="text-center">
           <p className="small text-muted mb-2">
-            © 2026 Russo Pharma. All rights reserved. Medical-grade supplements.
+            © {currentYear || new Date().getFullYear()} Your Company. Russo Pharma. All rights reserved. Medical-grade supplements.
           </p>
-          <p className="small text-muted">
+          <p className="small text-bright-green">
             ✓ FDA Approved Facility • ✓ GMP Certified • ✓ Lab Tested • ✓ 100% Authentic
           </p>
         </div>

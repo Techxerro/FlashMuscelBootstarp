@@ -5,17 +5,20 @@ import product2 from './Assets/product2.png';
 
 export default function Products() {
   return (
-    <section id="products" className="py-5">
+    <section id="products" className="py-2 py-sm-5">
       <div className="container">
-        <div className="row align-items-center mb-5">
-          <div className="col-md-6">
-            <h2 className="display-5 fw-bold">
+        <div className="row align-items-end mb-lg-5 mb-3">
+          <div className="col-xl-5 col-lg-6 col-12">
+            <h2 className="title mb-4 mb-sm-2">
               Choose Your<br/>
               <span className="text-bright-green">Power Formula</span>
             </h2>
           </div>
-          <div className="col-md-6">
-            <p className="text-muted mb-0">
+          <div className="col-md-6 col-12">
+            <div className="mb-3"> 
+              <span className="badge-pill">Premium Products</span>
+            </div>
+            <p className="text-black text-xs">
               Medical-grade supplements for<br/>
               those with ultimate goals
             </p>
@@ -26,7 +29,7 @@ export default function Products() {
           {/* Vit2MAX Card */}
           <div className="col-md-6">
             <div className="product-select-card">
-              <div className="">                
+              <div className="d-flex align-items-center">                
                 <Image src={product1} alt="" className='productImg' />
               </div>
               <div>              
@@ -54,7 +57,7 @@ export default function Products() {
           {/* Riboxin Card */}
           <div className="col-md-6">
             <div className="product-select-card gray-card">
-              <div className="">                
+              <div className="d-flex align-items-center">                
                 <Image src={product2} alt="" className='productImg' />
               </div>
               <div>              
