@@ -573,7 +573,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* LG screen */
-@media (max-width:1190px) {
+@media (max-width:1290px) {
     /* title */
   .title{
     font-size: 60px;

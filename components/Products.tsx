@@ -8,7 +8,7 @@ export default function Products() {
     <section id="products" className="py-2 py-sm-5">
       <div className="container">
         <div className="row align-items-end mb-lg-5 mb-3">
-          <div className="col-xl-5 col-lg-6 col-12">
+          <div className="col-xl-6 col-lg-6 col-12">
             <h2 className="title mb-4 mb-sm-2">
               Choose Your<br/>
               <span className="text-bright-green">Power Formula</span>
@@ -47,7 +47,7 @@ export default function Products() {
                   <li>Increases oxygen levels</li>
                 </ul>
                 
-                <button className="btn btn-white w-50">
+                <button className="btn btn-white">
                   See Details
                 </button>    
               </div>
