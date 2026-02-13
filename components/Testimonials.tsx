@@ -7,14 +7,14 @@ export default function Testimonials() {
     {
       rating: 5,
       verified: true,
-      text: "Russo Pharma supplements have completely transformed my training regimen. The quality is absolutely unmatched!",
+      text: "Flash Muscle supplements have completely transformed my training regimen. The quality is absolutely unmatched!",
       author: "Rahul Sharma",
       role: "Professional Athlete"
     },
     {
       rating: 5,
       verified: true,
-      text: "As a fitness professional, I only recommend products I trust. Russo Pharma delivers medical-grade quality.",
+      text: "As a fitness professional, I only recommend products I trust. Flash Muscle delivers medical-grade quality.",
       author: "Priya Malhotra",
       role: "Fitness Coach"
     },

@@ -15,7 +15,7 @@ export default function CTA() {
           </h2>
           
           <p className="lead mb-md-3 mb-3 text-black" style={{ margin: '0 auto' }}>
-            Join thousands of athletes who trust Russo Pharma for their fitness journey
+            Join thousands of athletes who trust Flash Muscle for their fitness journey
           </p>
           
           <div className="d-flex flex-wrap justify-content-center gap-3 mb-5">

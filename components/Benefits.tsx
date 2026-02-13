@@ -65,7 +65,7 @@ export default function Benefits() {
           <div className="col-lg-6">
             <h2 className="title">
               Why Choose<br/>
-              <span className="text-bright-green">Russo Pharma?</span>
+              <span className="text-bright-green">Flash Muscle?</span>
             </h2>
           </div>
           <div className="col-md-6">

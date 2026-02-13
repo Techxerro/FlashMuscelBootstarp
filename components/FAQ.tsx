@@ -8,7 +8,7 @@ export default function FAQ() {
     },
     {
       question: "Are these supplements safe?",
-      answer: "Yes, all Russo Pharma products are medical-grade and manufactured in certified facilities following strict pharmaceutical standards."
+      answer: "Yes, all Flash Muscle products are medical-grade and manufactured in certified facilities following strict pharmaceutical standards."
     },
     {
       question: "When will I see results?",

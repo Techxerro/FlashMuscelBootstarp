@@ -65,7 +65,7 @@ export default function Footer() {
         
         <div className="text-center">
           <p className="small text-muted mb-2">
-            © {currentYear || new Date().getFullYear()} Your Company. Russo Pharma. All rights reserved. Medical-grade supplements.
+            © {currentYear || new Date().getFullYear()} Your Company. Flash Muscle. All rights reserved. Medical-grade supplements.
           </p>
           <p className="small text-bright-green">
             ✓ FDA Approved Facility • ✓ GMP Certified • ✓ Lab Tested • ✓ 100% Authentic
